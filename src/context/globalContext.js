@@ -21,12 +21,14 @@ const globalReducer = (state, action) => {
 export const GlobalProvider = ({ children }) => {
   let localStorageTheme
 
-  if (typeof window !== undefined) {
-    localStorageTheme =
-      window.localStorage.getItem("theme") === "null"
-        ? "dark"
-        : window.localStorage.getItem("theme")
-  }
+  React.useLayoutEffect(() => {
+    if (typeof window !== undefined) {
+      localStorageTheme =
+        window.localStorage.getItem("theme") === "null"
+          ? "dark"
+          : window.localStorage.getItem("theme")
+    }
+  }, [])
 
   const initialState = {
     currentTheme: localStorageTheme,
