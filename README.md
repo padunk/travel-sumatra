@@ -1,2 +1,3 @@
-# Travel Sumatra
-Visit travel-sumatra.com
+# AWWWARDS WEBSITE CLONE
+
+clone of [furrow](https://furrow.studio)
