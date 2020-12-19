@@ -64,9 +64,7 @@ export const Cursor = styled.div`
   left: 0;
   width: 3.2rem;
   height: 3.2rem;
-  background: linear-gradient(to bottom right, hsl(305, 100%, 50%), ${
-    COLORS.red
-  });
+  background: radial-gradient(circle, rgb(245, 245, 20), rgb(240, 220, 0));
   border-radius: 100%;
   transform: translate(-50%, -50%);
   transition: all 100ms ease-in-out;
@@ -92,8 +90,7 @@ export const Cursor = styled.div`
 
   &.nav-open {
     /* background: ${props => props.theme.background}; */
-    background: linear-gradient(to bottom right, hsl(305, 100%, 50%), ${props =>
-      props.theme.background});
+    background: radial-gradient(circle, rgb(20, 245, 245), rgb(0, 240, 220));
   }
 
   &.hovered.nav-open {
